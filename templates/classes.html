@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Classes - ClassCade</title>
+	</head>
+	<body>
+		{% if classes %}
+			<ul>
+				{% for c in classes %}
+				<li>{{ c.class_code }} {{ c.section }}</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>No classes available.</p>
+		{% endif %}
+	</body>
+</html>
