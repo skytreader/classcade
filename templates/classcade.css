@@ -1,0 +1,40 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: #d2d2d2;
+}
+
+div.banner {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: #245ca9;
+	padding: 10px;
+	z-index: 1;
+}
+
+div.banner_holder{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: #245ca9;
+	padding: 10px;
+	z-index: 0;
+	visibility: hidden;
+}
+
+div.mainbody {
+	margin-left: 10%;
+	margin-right: 10%;
+	border: solid 1px #000000;
+	z-index: 0;
+	position: absolute;
+	min-height: 100%;
+	width: 80%;
+	background-color: #ffffff;
+}
