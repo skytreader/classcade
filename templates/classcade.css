@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #d2d2d2;
+	background-color: #1b1b1b;
 }
 
 div.banner {
@@ -15,6 +15,7 @@ div.banner {
 	background-color: #245ca9;
 	padding: 10px;
 	z-index: 1;
+	box-shadow: 3px 3px 4px #000;
 }
 
 div.banner_holder{
