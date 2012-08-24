@@ -1,27 +1,34 @@
 <!--
 The template should expect the following:
   - title - For the page's title.
-  - content - The page's contents.
+  - content - The page's contents, specified as an include file.
   - stylesheets - The (additional) stylesheets which this page will load.
   - scripts - The JavaScript files which this page will load.
 -->
 <html>
 	<head>
-		<title>Template</title>
+		<title><!-- {% block title} -->Template<!-- {% endblock %} --></title>
 		<link rel="stylesheet" type="text/css" href="classcade.css" />
 		<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="banner">
+		<div class="banner banner_show">
 			<img src="img/classcade_logo.png" alt="classcade logo" />
 		</div>
-		<div class="mainbody">
+		<div class="content mainbody">
 			<!-- Replicate the banner so that it translates mainbody content
 			but set visibility to hidden. -->
-			<div class="banner_holder">
+			<div class="banner banner_holder">
 				<img src="img/classcade_logo.png" alt="classcade logo" />
 			</div>
+			<!-- {% block maincontent %} -->
 			<h1>Hello World</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a tellus non tortor facilisis molestie. Nam sed nibh velit. Fusce sit amet tellus sed risus pharetra dapibus a in nunc. Ut venenatis aliquet imperdiet. Suspendisse sit amet quam nec lorem posuere semper. Cras ut diam quis massa tempor mattis. Nam fringilla enim id purus blandit nec placerat ligula pretium. Donec nunc lectus, fermentum quis placerat ac, fringilla eu purus. Integer cursus, nisl vitae fringilla pellentesque, urna sapien molestie leo, at dapibus massa justo sit amet erat. Nam augue dolor, auctor ut aliquet pellentesque, accumsan et tellus.</p>
+			<!-- {% endblock %} -->
+		</div>
+		<br />
+		<div class="content postscript">
+			<h1>Some Content...</h1>
 		</div>
 	</body>
 </html>
