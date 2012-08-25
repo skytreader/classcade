@@ -1,0 +1,12 @@
+form.login{
+	background-color: #d2d2d2;
+	padding: 10px;
+	margin-bottom: 3px;
+}
+
+div.login_floatbox{
+	margin-left: 20px;
+	margin-top: 10px;
+	float: right;
+	width: 30%;
+}

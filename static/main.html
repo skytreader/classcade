@@ -5,24 +5,25 @@ The template should expect the following:
   - stylesheets - The (additional) stylesheets which this page will load.
   - scripts - The JavaScript files which this page will load.
 -->
+{% load staticfiles %}
 <html>
 	<head>
 		<title><!-- {% block title %} -->Template<!-- {% endblock %} --></title>
-		<link rel="stylesheet" type="text/css" href="classcade.css" />
+		<link rel="stylesheet" type="text/css" href="{% static "classcade.css" %}" />
 		<!-- {% block css_includes %} -->
-		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="{% static "index.css" %}" />
 		<!-- {% endblock %} -->
 		<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="banner banner_show">
-			<img src="img/classcade_logo.png" alt="classcade logo" />
+			<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" />
 		</div>
 		<div class="content mainbody">
 			<!-- Replicate the banner so that it translates mainbody content
 			but set visibility to hidden. -->
 			<div class="banner banner_holder">
-				<img src="img/classcade_logo.png" alt="classcade logo" />
+				<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" />
 			</div>
 			<!-- {% block maincontent %} -->
 			<div class="login_floatbox">
