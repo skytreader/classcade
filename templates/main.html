@@ -18,13 +18,13 @@ The template should expect the following:
 	</head>
 	<body>
 		<div class="banner banner_show">
-			<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" id="logo" />
+			<img src="{% static "img/classcade_logo.png" %}" alt="Classcade logo" id="logo" />
 		</div>
 		<div class="content mainbody">
 			<!-- Replicate the banner so that it translates mainbody content
 			but set visibility to hidden. -->
 			<div class="banner banner_holder">
-				<img alt="classcade logo" id="padding" />
+				<img id="padding" />
 			</div>
 			{% block maincontent %}
 			{% endblock %}
