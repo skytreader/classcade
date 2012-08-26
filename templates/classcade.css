@@ -16,9 +16,12 @@ p, span.font_mirror {
 div.banner {
 	top: 0px;
 	left: 0px;
-	width: 100%;
 	background-color: #245ca9;
 	padding: 10px;
+}
+
+div.logo{
+	width: 100%;
 }
 
 div.banner_show {

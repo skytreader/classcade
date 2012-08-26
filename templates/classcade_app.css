@@ -1,9 +1,5 @@
 /* TODO: Refactor! */
 div.sidebar{
-	top: 0px;
-	left: 0px;
-	background-color: #245ca9;
-	padding: 10px;
 	min-height: 100%;
 }
 
