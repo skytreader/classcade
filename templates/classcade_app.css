@@ -1,0 +1,27 @@
+/* TODO: Refactor! */
+div.sidebar{
+	top: 0px;
+	left: 0px;
+	background-color: #245ca9;
+	padding: 10px;
+	min-height: 100%;
+}
+
+div.sidebar_pad{
+	position: relative;
+	z-index: 0;
+	visibility: hidden;
+	float: left;
+}
+
+div.board_content{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	background-color: #fff;
+	padding: 5px 8px;
+	min-height: 80%;
+	float: left;
+	width: 60%;
+}
