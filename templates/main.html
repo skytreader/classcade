@@ -14,16 +14,17 @@ The template should expect the following:
 			<link rel="stylesheet" type="text/css" href="{% static style %}" />
 		{% endfor %}
 		<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript" src="{% static "scripts/loadPadding.js" %}"></script>
 	</head>
 	<body>
 		<div class="banner banner_show">
-			<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" />
+			<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" id="logo" />
 		</div>
 		<div class="content mainbody">
 			<!-- Replicate the banner so that it translates mainbody content
 			but set visibility to hidden. -->
 			<div class="banner banner_holder">
-				<img src="{% static "img/classcade_logo.png" %}" alt="classcade logo" />
+				<img alt="classcade logo" id="padding" />
 			</div>
 			{% block maincontent %}
 			{% endblock %}
