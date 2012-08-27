@@ -1,4 +1,18 @@
-/* TODO: Refactor! */
+div.bordered_menu{
+	border-width: 2px;
+	border-color: #444;
+	border-style: none none groove none;
+}
+
+div.divider{
+	height: 2px;
+	width: 100%;
+	background-color: #444;
+	box-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 div.sidebar{
 	min-height: 100%;
 }
